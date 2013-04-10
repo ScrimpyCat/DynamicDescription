@@ -17,8 +17,8 @@ Example
 	    int mag[2];
 	    char *cool;
 	    struct {
-	void *interesting;
-	int values;
+			void *interesting;
+			int values;
 	    } willitwill;
 	};
 
@@ -32,59 +32,59 @@ Example
 	    void (^own)();
 	    
 	    union {
-	float fVal;
-	int iVal;
-	NSString *ptrVal;
+			float fVal;
+			int iVal;
+			NSString *ptrVal;
 	    } misc;
 	    
 	    union something abc;
 	    
 	    struct {
-	int mag;
-	void *cool;
+			int mag;
+			void *cool;
 	    } unnamed;
 	    
 	    struct thesome named;
 	    
 	    
 	    struct {
-	union {
-	    int a;
-	    float b;
-	} coolu;
-	struct {
-	    int l;
-	    char v;
-	    struct {
-	        int val;
-	        union {
-	            char c;
-	            short s;
-	        } youknow;
-	    } field;
-	} __attribute__((packed)) very;
+			union {
+			    int a;
+			    float b;
+			} coolu;
+			struct {
+			    int l;
+			    char v;
+			    struct {
+			        int val;
+			        union {
+			            char c;
+			            short s;
+			        } youknow;
+			    } field;
+			} __attribute__((packed)) very;
 	    } funstuff;
 	    
 	    struct {
-	int fun[3][3];
-	char seven;
+			int fun[3][3];
+			char seven;
 	    } thisisthat;
 	    
 	    struct {
-	float x, y;
+			float x, y;
 	    } positions[3];
 	    
 	    struct {
-	float x, y;
-	int fun[3][3];
-	char seven;
-	struct {
-	    int val;
-	    union {
-	        char c;
-	        short s;
-	    } youknow;
-	} field;
+			float x, y;
+			int fun[3][3];
+			char seven;
+			struct {
+			    int val;
+			    union {
+			        char c;
+			        short s;
+			    } youknow;
+			} field;
 	    } *zzz;
 	    
 	    int am[3][2][4];
