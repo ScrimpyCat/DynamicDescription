@@ -5,6 +5,13 @@ DynamicDescription is a simple Obj-C library that returns a detailed description
 
 It will display all the ivar information (names and current values) that it can for the object specified.
 
+Notes
+-----
+
+Bit fields are not supported, and any other not-supported feature will make it add an "(Incomplete)" next to the ivar. Printing of structures, unions, arrays is all under the assumption of packed data. So if the data isn't packed then there will be incorrect values printed.
+
+There is no guarantee the values for the ivar's printed will be correct in a multi-threaded application.
+
 Example
 -------
 
