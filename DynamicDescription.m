@@ -522,10 +522,7 @@ void GetIvarValue(TYPE_OF_DATA *Data, NSMutableString *Value, const Ivar Var, id
             GetIvarValue(Data->nextType, Value, Var, NewVal, 0, YES);
             #endif
             break;
-            /*
-             Using NSNumber so it's much easier to handle on different systems/architectures. e.g. long on 32-bit
-             is 32-bits so would use the specifier %d, however on 64-bit it is 64-bits so would use %ld.
-             */
+            
         case DATA_TYPE_CHAR:
             [Value appendString: [[NSNumber numberWithChar: ((char*)Pointer)[Index]] stringValue]];
             break;
